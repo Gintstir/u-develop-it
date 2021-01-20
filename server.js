@@ -189,6 +189,8 @@ app.use((req, res) => {
   res.status(404).end();
 });
 
+
+//===========================================================================
 // Start server after DB connection
 db.on('open', () => {
   app.listen(PORT, () => {
